@@ -29,7 +29,7 @@ class C_BR(nn.Module):
         super().__init__()
 
         self.g = nn.Conv2d(in_channels=in_channel,out_channels=out_channel,kernel_size=kernel_size,stride=stride,padding=padding)
-        self.g = nn.Conv2d(in_channels=in_channel_post, out_channels=out_channel, kernel_size=kernel_size, stride=stride,
+        self.g_post = nn.Conv2d(in_channels=in_channel_post, out_channels=out_channel, kernel_size=kernel_size, stride=stride,
                            padding=padding)
 
         self.sigma = nn.Sequential(
