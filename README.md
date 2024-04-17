@@ -1,3 +1,5 @@
+# nmODE
+
 **0. Main Environments**
 - python 3.8
 - [pytorch 1.8.0](https://download.pytorch.org/whl/cu111/torch-1.8.0%2Bcu111-cp38-cp38-win_amd64.whl)
@@ -33,5 +35,3 @@ python train.py
 
 **4. Obtain the outputs.**
 - After trianing, you could obtain the outputs in './results/'
-
-# nmODE
