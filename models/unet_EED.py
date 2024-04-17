@@ -91,23 +91,18 @@ class UNet_EED(nn.Module):
 
         y5 = self.act(self.up1(x5,y0,1/5,input_weight[0][0],input_weight[0][1],16))
         y5 = self.drop(y5)
-        #gt_pre5 = self.map5(y5)
 
         y4 = self.act(self.up2(x4,y5,1/5,input_weight[1][0],input_weight[1][1],8))
         y4 = self.drop(y4)
-        #gt_pre4 = self.map4(y4)
 
         y3 = self.act(self.up3(x3,y4,1/5,input_weight[2][0],input_weight[2][1],4))
         y3 = self.drop(y3)
-        #gt_pre3 = self.map3(y3)
 
         y2 = self.act(self.up4(x2,y3,1/5,input_weight[3][0],input_weight[3][1],2))
         y2 = self.drop(y2)
-        #gt_pre2 = self.map2(y2)
 
         y1 = self.up5(x1, y2, 1/5,input_weight[4][0], input_weight[4][1],1)
         y1 = self.drop(y1)
-        #gt_pre1 = self.map1(y1)
 
         y = self.outc(y1)
 
