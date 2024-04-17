@@ -7,7 +7,7 @@
 
 **1. Prepare the dataset.**
 
-- The[ISIC17](https://challenge.isic-archive.com/data/#2017),[ISIC18](https://challenge.isic-archive.com/data/#2018) and [PH2](https://www.fc.up.pt/addi/ph2%20database.html) datasets, divided into a 7:3 ratio.
+- The [ISIC17](https://challenge.isic-archive.com/data/#2017),[ISIC18](https://challenge.isic-archive.com/data/#2018) and [PH2](https://www.fc.up.pt/addi/ph2%20database.html) datasets, divided into a 7:3 ratio.
 - 
 - After downloading the datasets, you are supposed to put them into './data/isic17/' , './data/isic18/' and './data/ph2/' , and the file format reference is as follows. (take the ISIC17 dataset as an example.)
 
